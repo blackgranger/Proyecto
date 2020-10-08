@@ -1,0 +1,311 @@
+
+body {
+    background: rgb(0, 0, 0, .9);
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header::after {
+    content: '';
+    height: 50vh;
+    background-image: url(../img/adn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+    padding: 2rem;
+}
+
+.header:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.header:hover .header-content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.header-content {
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 50%;
+    margin-top: 5px;
+    margin-left: -140px;
+    width: 300px;
+    height: 350px;
+    transition: all 1000ms;
+    text-align: center;
+    color: black;
+}
+
+.header-content .genoma {
+    height: 100px;
+    width: 100px;
+    border-radius: 80px;
+}
+
+.ganadoras {
+    height: 360px;
+    width: 500px;
+}
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+
+.text {
+    line-height: 1.7;
+    margin: 1rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.emma-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+}
+
+.jennifer-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+}
+
+.investigacion-grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+}
+.nobel-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+
+.nobelquimica {
+    height: 300px;
+    width: 400px;
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
+}
+
+.bg-light {
+    background: #ffffff;
+    color: #333333;
+}
+
+.bd-dark {
+    background: #2f3542;
+    color: #ffffff;
+}
+
+.CRISPR {
+    padding: 2rem 0;
+}
+
+footer {
+    padding: 2.2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.bg-light {
+    background: #ffffff;
+    color: #333333;
+}
+
+footer {
+    padding: 2.2rem;
+}
+
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+
+.about-grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+.quien-grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+.navbar {
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 62%, rgba(0,212,255,1) 100%);
+    gap: 1rem;
+    }
+
+    .grid-6 a {
+        padding: 1rem;
+    }
+    
+    .grid-6 a:hover {
+        text-decoration: underline;
+    }
+
+    @media(max-width: 560px) {
+        .header::after {
+            height: 50vh;
+        }
+        .header-content {
+            top: 5%;
+            margin-top: 5px;
+        }
+        .header-content .logo {
+            height: 120px;
+            width: 120px;
+        }
+
+        .quien-grid-2,
+        .nobel-grid-2,
+        .investigacion-grid-2,
+        .jennifer-grid-2,
+        .emma-grid-3,
+        .about-grid-2,
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+        .grid-6{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .emmajenn{
+            height: 300px;
+            width: 300px;
+        }
+
+        .ganadoras {
+            height: 200px;
+            width: 300px;
+        }
+
+        .nobel {
+            height: 200px;
+            width: 300px;
+        }
+
+        .emmayjenn {
+            height: 200px;
+            width: 300px;
+        }
+        
+        .container {
+            font-size: 10px;
+        }
+
+        .jenn {
+            height: 200x;
+            width: 150px;
+    }
+    .emmayjenn {
+        height: 200px;
+        width: 250px;
+    }
+
+    .nobelquimica{
+        height: 200px;
+        width: 300px;
+    }
+
+    .aboutjenn {
+        position: center;
+    }
+
+    .emmajenn{
+        height: 200px;
+        width: 300px;
+    
+    }
+    
+    }
+
+    
+@media(max-height: 500px) {
+    .header-content .text {
+        display: none;
+    }
+    .header-content {
+        top: 40px;
+    }
+
+    .navbar a{
+        font-size: 10px;
+    }
+
+    .grid-6 a {
+        padding: 5px;
+    }
+
+    .bio {
+        font-size: 10px;
+    }
+
+    .ganadoras {
+        height: 150px;
+        width: 250px;
+    }
+
+    .nobel {
+        height: 150px;
+        width: 250px;
+    }
+
+    .emmayjenn {
+        height: 150px;
+        width: 250px;
+    }
+
+    .jenn {
+        height: 200px;
+        width: 250px;
+    }
+    
+}
